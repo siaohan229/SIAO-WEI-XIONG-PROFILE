@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>萧伟雄 - 励志健美少年</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+      color: #333;
+    }
+    header {
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    nav {
+      text-align: center;
+      margin: 15px;
+    }
+    nav button {
+      margin: 0 8px;
+      padding: 10px 20px;
+      border: none;
+      background: #ff9800;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+    nav button:hover {
+      background: #e67e22;
+      transform: scale(1.1);
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      margin-bottom: 40px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h2 {
+      border-left: 6px solid #5563DE;
+      padding-left: 10px;
+      color: #333;
+    }
+    img.placeholder {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    img.placeholder:hover {
+      transform: scale(1.05);
+    }
+    iframe {
+      width: 100%;
+      height: 420px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    ul li {
+      margin: 10px 0;
+      padding: 10px;
+      background: #f2f2f2;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+    ul li:hover {
+      background: #e0e0e0;
+    }
+    a {
+      color: #5563DE;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .hidden { display: none; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">萧伟雄 —— 励志健美少年</h1>
+  </header>
+
+  <nav>
+    <button onclick="setLanguage('zh')">中文</button>
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('ms')">Bahasa Melayu</button>
+  </nav>
+
+  <div class="container">
+    <!-- 中文内容 -->
+    <div id="zh" class="lang">
+      <h2>简介</h2>
+      <p>萧伟雄，18岁，来自霹雳州太平，出生时因脐带缠绕致缺氧而脑瘫。5岁才学会说话，12岁方能行走。凭借顽强意志和自学精神，他投入健美运动，逐步改善体质，癫痫停止发作，生活自理能力大大提升。</p>
+
+      <img src="img/xwx1.jpg" alt="萧伟雄照片" class="placeholder">
+
+      <h2>成就</h2>
+      <ul>
+        <li>2022 年：健美赛表演嘉宾</li>
+        <li>2024 年：澳门世界自然健美赛获“健美精神奖”</li>
+        <li>2024 年：本地健美赛第 4 名及特别奖，共获 5 面奖牌</li>
+      </ul>
+
+      <h2>生活改善</h2>
+      <p>体重从 20 公斤增加至 40 公斤以上，能够自行行走和爬楼梯，停止服用癫痫药物。饮食以鸡胸肉、鸡蛋、蛋白粉和蔬菜为主，避免垃圾食品。</p>
+
+      <h2>视频</h2>
+      <iframe src="https://www.youtube.com/embed/6tbZuWmnwnA" allowfullscreen></iframe>
+
+      <h2>媒体报导</h2>
+      <ul>
+        <li><a href="https://perak.sinchew.com.my/news/20240716/perak/5766811" target="_blank">星洲日报 大霹雳</a></li>
+        <li><a href="https://www.enanyang.my/node/614305" target="_blank">南洋商报 e南洋</a></li>
+        <li><a href="https://www.orientaldaily.com.my/news/perak/2024/07/16/666065" target="_blank">东方日报</a></li>
+        <li><a href="https://www.kwongwah.com.my/20240716/%E8%84%91%E7%98%AB%E4%B8%AD%E5%AD%A6%E7%94%9F%E4%B8%BA%E6%A2%A6%E6%83%B3%E5%8F%91%E5%85%89-%E5%8B%87%E5%A4%BA2%E9%A1%B9%E5%81%A5%E7%BE%8E%E8%B5%9B%E7%AC%AC4%E5%90%8D/" target="_blank">光华日报</a></li>
+        <li><a href="https://www.chinapress.com.my/20240716/%E6%82%A3%E5%85%88%E5%A4%A9%E6%80%A7%E8%84%91%E7%96%BE%E4%B8%8D%E8%A8%80%E5%BC%83-%E8%90%A7%E4%BC%9F%E9%9B%84-%E5%81%A5%E7%BE%8E%E5%8F%B0%E4%B8%8A%E5%8F%91%E5%85%89/" target="_blank">中国报</a></li>
+      </ul>
+    </div>
+
+    <!-- English content -->
+    <div id="en" class="lang hidden">
+      <h2>About</h2>
+      <p>Xiao Wei Xiong, 18, from Taiping, Perak, was born with cerebral palsy due to lack of oxygen at birth. He spoke at 5 and could only walk at 12. Through determination and self-learning, he took up bodybuilding, improved his health, stopped epilepsy, and gained independence.</p>
+
+      <img src="img/xwx2.jpg" alt="Xiao Wei Xiong Photo" class="placeholder">
+
+      <h2>Achievements</h2>
+      <ul>
+        <li>2022: Guest performer at bodybuilding competition</li>
+        <li>2024: "Spirit of Bodybuilding" Award at Macau World Natural Bodybuilding</li>
+        <li>2024: Local competitions – 4th place & Special Award, total 5 medals</li>
+      </ul>
+
+      <h2>Life Transformation</h2>
+      <p>Weight increased from 20kg to over 40kg, now able to walk and climb stairs independently, no longer taking epilepsy medication. Diet includes chicken breast, eggs, vegetables, protein supplements, avoiding junk food.</p>
+
+      <h2>Video</h2>
+      <iframe src="https://www.youtube.com/embed/6tbZuWmnwnA" allowfullscreen></iframe>
+
+      <h2>Media Coverage</h2>
+      <ul>
+        <li><a href="https://perak.sinchew.com.my/news/20240716/perak/5766811" target="_blank">Sin Chew Daily</a></li>
+        <li><a href="https://www.enanyang.my/node/614305" target="_blank">Nanyang Siang Pau</a></li>
+        <li><a href="https://www.orientaldaily.com.my/news/perak/2024/07/16/666065" target="_blank">Oriental Daily</a></li>
+        <li><a href="https://www.kwongwah.com.my/20240716/%E8%84%91%E7%98%AB%E4%B8%AD%E5%AD%A6%E7%94%9F%E4%B8%BA%E6%A2%A6%E6%83%B3%E5%8F%91%E5%85%89-%E5%8B%87%E5%A4%BA2%E9%A1%B9%E5%81%A5%E7%BE%8E%E8%B5%9B%E7%AC%AC4%E5%90%8D/" target="_blank">Kwong Wah Yit Poh</a></li>
+        <li><a href="https://www.chinapress.com.my/20240716/%E6%82%A3%E5%85%88%E5%A4%A9%E6%80%A7%E8%84%91%E7%96%BE%E4%B8%8D%E8%A8%80%E5%BC%83-%E8%90%A7%E4%BC%9F%E9%9B%84-%E5%81%A5%E7%BE%8E%E5%8F%B0%E4%B8%8A%E5%8F%91%E5%85%89/" target="_blank">China Press</a></li>
+      </ul>
+    </div>
+
+    <!-- Bahasa Melayu content -->
+    <div id="ms" class="lang hidden">
+      <h2>Tentang</h2>
+      <p>Xiao Wei Xiong, 18 tahun, dari Taiping, Perak, dilahirkan dengan cerebral palsy kerana kekurangan oksigen semasa lahir. Beliau mula bercakap pada umur 5 tahun dan berjalan pada umur 12 tahun. Dengan semangat dan usaha sendiri, beliau menceburi bina badan, meningkatkan kesihatan, berhenti sawan, dan menjadi lebih berdikari.</p>
+
+      <img src="img/xwx3.jpg" alt="Xiao Wei Xiong Foto" class="placeholder">
+
+      <h2>Pencapaian</h2>
+      <ul>
+        <li>2022: Persembahan jemputan di pertandingan bina badan</li>
+        <li>2024: Anugerah "Semangat Binaraga" di Pertandingan Dunia Bina Badan Semula Jadi Macau</li>
+        <li>2024: Pertandingan tempatan – tempat ke-4 & Anugerah Khas, jumlah 5 pingat</li>
+      </ul>
+
+      <h2>Transformasi Kehidupan</h2>
+      <p>Berat meningkat daripada 20kg ke lebih 40kg, kini boleh berjalan dan naik tangga sendiri, tidak lagi mengambil ubat sawan. Diet termasuk dada ayam, telur, sayuran, suplemen protein, elakkan makanan ringan.</p>
+
+      <h2>Video</h2>
+      <iframe src="https://www.youtube.com/embed/6tbZuWmnwnA" allowfullscreen></iframe>
+
+      <h2>Liputan Media</h2>
+      <ul>
+        <li><a href="https://perak.sinchew.com.my/news/20240716/perak/5766811" target="_blank">Sin Chew Daily</a></li>
+        <li><a href="https://www.enanyang.my/node/614305" target="_blank">Nanyang Siang Pau</a></li>
+        <li><a href="https://www.orientaldaily.com.my/news/perak/2024/07/16/666065" target="_blank">Oriental Daily</a></li>
+        <li><a href="https://www.kwongwah.com.my/20240716/%E8%84%91%E7%98%AB%E4%B8%AD%E5%AD%A6%E7%94%9F%E4%B8%BA%E6%A2%A6%E6%83%B3%E5%8F%91%E5%85%89-%E5%8B%87%E5%A4%BA2%E9%A1%B9%E5%81%A5%E7%BE%8E%E8%B5%9B%E7%AC%AC4%E5%90%8D/" target="_blank">Kwong Wah</a></li>
+        <li><a href="https://www.chinapress.com.my/20240716/%E6%82%A3%E5%85%88%E5%A4%A9%E6%80%A7%E8%84%91%E7%96%BE%E4%B8%8D%E8%A8%80%E5%BC%83-%E8%90%A7%E4%BC%9F%E9%9B%84-%E5%81%A5%E7%BE%8E%E5%8F%B0%E4%B8%8A%E5%8F%91%E5%85%89/" target="_blank">China Press</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.add('hidden'));
+      document.getElementById(lang).classList.remove('hidden');
+      if (lang === 'zh') {
+        document.getElementById('title').innerText = "萧伟雄 —— 励志健美少年";
+      } else if (lang === 'en') {
+        document.getElementById('title').innerText = "Xiao Wei Xiong - Inspiring Bodybuilder";
+      } else {
+        document.getElementById('title').innerText = "Xiao Wei Xiong - Atlet Bina Badan Inspirasi";
+      }
+    }
+  </script>
+</body>
+</html>
