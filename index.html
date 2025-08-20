@@ -216,3 +216,57 @@
   </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>萧伟雄 - 个人网站</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        el.style.display = el.getAttribute("data-lang") === lang ? "block" : "none";
+      });
+    }
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-4xl mx-auto p-6">
+    <!-- 切换按钮 -->
+    <div class="flex justify-end mb-6 space-x-2">
+      <button onclick="switchLang('zh')" class="px-4 py-2 bg-blue-500 text-white rounded-lg">中文</button>
+      <button onclick="switchLang('en')" class="px-4 py-2 bg-green-500 text-white rounded-lg">English</button>
+    </div>
+
+    <!-- 中文版本 -->
+    <div data-lang="zh">
+      <h1 class="text-4xl font-bold mb-4">萧伟雄</h1>
+      <p class="mb-6">来自马来西亚霹雳太平的残疾健美运动员，积极参与各类赛事并屡获佳绩。</p>
+
+      <h2 class="text-2xl font-bold mb-4">成就</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>2022 - 霹雳先生 (Mr Perak)</li>
+        <li>2023 - WNBF 世界自然健美联合会比赛</li>
+        <li>2024 - WNBF 世界自然健美联合会比赛</li>
+        <li>2024 - NPC 全国健美委员会比赛</li>
+      </ul>
+    </div>
+
+    <!-- 英文版本 -->
+    <div data-lang="en" style="display:none;">
+      <h1 class="text-4xl font-bold mb-4">Siao Wei Xiong</h1>
+      <p class="mb-6">A disabled bodybuilder from Taiping, Perak, Malaysia, actively competing and achieving remarkable results in various competitions.</p>
+
+      <h2 class="text-2xl font-bold mb-4">Achievements</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>2022 - Mr Perak</li>
+        <li>2023 - WNBF (World Natural Bodybuilding Federation)</li>
+        <li>2024 - WNBF (World Natural Bodybuilding Federation)</li>
+        <li>2024 - NPC (National Physique Committee)</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
